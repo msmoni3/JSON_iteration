@@ -11,11 +11,11 @@ export class AppComponent {
   name = "Angular " + VERSION.major;
 
   superHeroes: any = data1;
-  superHeroesarray = data2;
+  superHeroesarray = data2; //Arrays as JSON
 
   constructor() {
     console.log(this.superHeroes.homeTown);
     console.log(this.superHeroes["members"][0]["powers"][2]);
-    console.log(this.superHeroesarray[1]['members'][1]['powers'][2])
+    console.log(this.superHeroesarray[1]["members"][1]["powers"][2]);
   }
 }
